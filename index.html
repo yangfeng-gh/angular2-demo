@@ -8,16 +8,24 @@
 
     <!-- 1. 载入库 -->
     <!-- IE 需要 polyfill -->
+    <!-- 为全局上下文 (window) 打的补丁，提供了 ES2015(ES6) 的很多基础特性 -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
-
+    <!-- angular依赖的库 -->
+    <!-- 一个为 Zone 规范 提供的填充库 -->
     <script src="node_modules/zone.js/dist/zone.js"></script>
+    <!-- 一个由 Angular 和 TypeScript 编译器共享的依赖包 -->
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
-
+    <!-- 一个为 可观察对象 (Observable) 规范 提供的填充库 -->
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <!-- 提供元数据装饰器，依赖注入系统，生命周期钩子 -->
     <script src="node_modules/@angular/core/bundles/core.umd.js"></script>
+    <!-- 提供服务，管道和指令 -->
     <script src="node_modules/@angular/common/bundles/common.umd.js"></script>
+    <!-- 模板编译器 -->
     <script src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
+    <!-- DOM渲染及构建时离线预编译 -->
     <script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+    <!-- 为应用程序提供一些提供商和bootstrap方法，以便在客户端编译模板。不用于离线编译，这个包在开发期间引导应用，以及引导 plunker中的范例 -->
     <script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
 
     <!-- 2. 载入 'modules' -->
